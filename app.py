@@ -2,13 +2,24 @@ import streamlit as st
 import streamlit.components.v1 as stc
 from eda import run_eda
 from ml import run_ml
+from config.about import ABOUT
 
+
+# HTML for Home Page Banner
 html_temp = """
 		<div style="background-color:white;padding:12px;border-radius:5px">
 		<h1 style="color:black;text-align:center;">Early Stage DM Risk Data App </h1>
 		<h4 style="color:black;text-align:center;">Diabetes </h4>
 		</div>
 		"""
+
+# Basic web application configuration
+st.set_page_config(
+    page_title="Diabetes Early Diagnosis",
+    page_icon="🥼",
+    initial_sidebar_state="expanded",
+    layout='centered'
+)
 
 
 def main():
@@ -45,8 +56,7 @@ def main():
 
     # About this programm
     elif choice == "About":
-        st.subheader("About")
-
+        st.write(ABOUT)
 
 
 if __name__ == '__main__':

@@ -37,15 +37,6 @@ The dataset used for this project is the Pima Indians Diabetes Database, which c
     streamlit run app.py
     ```
 
-## Usage
-
-1. Open the Jupyter Notebook:
-    ```bash
-    jupyter notebook Diabetes_Diagnosis_Model.ipynb
-    ```
-
-2. Run the notebook cells to load the data, preprocess it, build and evaluate the machine learning model.
-
 ## Model
 
 The model uses various classification algorithms including Logistic Regression, Decision Tree, Random Forest, and Support Vector Machine (SVM). The performance of these models is evaluated using metrics such as accuracy, precision, recall, and F1-score.
